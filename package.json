@@ -1,6 +1,6 @@
 {
-    "name": "streamsaver",
-    "version": "2.0.6",
+    "name": "@inkarnaterpg/streamsaver",
+    "version": "2.1.0",
     "description": "StreamSaver writes stream to the filesystem directly - asynchronous",
     "main": "StreamSaver.js",
     "scripts": {
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://jimmywarting@github.com/jimmywarting/StreamSaver.js.git"
+        "url": "git+https://github.com/inkarnaterpg/StreamSaver.js"
     },
     "keywords": [
         "saving",
@@ -18,16 +18,13 @@
         "file",
         "blob"
     ],
+	"files": [
+		"./StreamSaver.js",
+		"./StreamSaver.d.ts",
+		"./sw.js",
+		"./mitm.html"
+		],
+	"types": "./StreamSaver.d.ts",
     "author": "Jimmy Wärting <jimmy@warting.se>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/jimmywarting/StreamSaver.js/issues"
-    },
-    "homepage": "https://github.com/jimmywarting/StreamSaver.js#readme",
-	"funding": [
-      {
-        "type": "github",
-        "url": "https://github.com/sponsors/jimmywarting"
-      }
-    ]
+    "license": "MIT"
 }
