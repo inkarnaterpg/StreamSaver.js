@@ -1,6 +1,6 @@
 {
     "name": "@inkarnaterpg/streamsaver",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "StreamSaver writes stream to the filesystem directly - asynchronous",
     "main": "StreamSaver.js",
     "scripts": {
@@ -19,12 +19,12 @@
         "blob"
     ],
 	"files": [
-		"./StreamSaver.js",
-		"./StreamSaver.d.ts",
-		"./sw.js",
-		"./mitm.html"
+		"StreamSaver.js",
+		"StreamSaver.d.ts",
+		"sw.js",
+		"mitm.html"
 		],
-	"types": "./StreamSaver.d.ts",
+	"types": "StreamSaver.d.ts",
     "author": "Jimmy Wärting <jimmy@warting.se>",
     "license": "MIT"
 }

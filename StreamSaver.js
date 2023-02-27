@@ -31,7 +31,7 @@
 	  disposeTransporter,
     WritableStream: global.WritableStream || ponyfill.WritableStream,
     supported: true,
-    version: { full: '2.0.5', major: 2, minor: 1, dot: 0 },
+    version: { full: '2.1.1', major: 2, minor: 1, dot: 1 },
     mitm: 'https://jimmywarting.github.io/StreamSaver.js/mitm.html?version=2.0.0'
   }
 
