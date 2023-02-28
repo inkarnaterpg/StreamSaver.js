@@ -44,15 +44,14 @@
   function makeIframe (src) {
     if (!src) throw new Error('meh')
     const iframe = document.createElement('iframe')
+    iframe.addEventListener('load', () => {
+	  iframe.dataset.loaded = "true"
+    })
     iframe.hidden = true
     iframe.src = src
-    iframe.loaded = false
+	  iframe.dataset.loaded = ""
     iframe.name = 'iframe'
-    iframe.isIframe = true
     iframe.postMessage = (...args) => iframe.contentWindow.postMessage(...args)
-    iframe.addEventListener('load', () => {
-      iframe.loaded = true
-    }, { once: true })
     document.body.appendChild(iframe)
     return iframe
   }
@@ -179,7 +178,7 @@
         }
       }
 
-      if (mitmTransporter.loaded) {
+      if (mitmTransporter.dataset.loaded) {
         mitmTransporter.postMessage(...args)
       } else {
         mitmTransporter.addEventListener('load', () => {
