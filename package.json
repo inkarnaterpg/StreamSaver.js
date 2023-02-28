@@ -1,6 +1,6 @@
 {
     "name": "@inkarnaterpg/streamsaver",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "description": "StreamSaver writes stream to the filesystem directly - asynchronous",
     "main": "StreamSaver.js",
     "scripts": {
